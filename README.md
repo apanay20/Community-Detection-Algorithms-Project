@@ -49,7 +49,7 @@ Below are shown the necessary python libraries to run the algorithms.
   ```sh
   python GirvanNewman.py
   ```
-## Outputs
+## Output Samples
 
 In this section you cna see the output of each algorithm on Zachary's karate club Network.
 
