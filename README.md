@@ -51,7 +51,7 @@ Below are shown the necessary python libraries to run the algorithms.
   ```
 ## Output Samples
 
-In this section you cna see the output of each algorithm on Zachary's karate club Network.
+In this section you can see the output of each algorithm on Zachary's karate club Network.
 
 <h4>Louvain Algorithm</h4>
   <img src="ResultsImages/louvainGraphKarate.PNG">
