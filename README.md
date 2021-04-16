@@ -11,7 +11,7 @@ Students:
 * Andreas Panayiotou
 * Theodoros Kyriakou
 
-### Prerequisites
+## Prerequisites
 
 Below are shown the necessary python libraries to run the algorithms. 
 * NetworkX
