@@ -43,17 +43,16 @@ def runStep(G):
         centrality = nx.edge_betweenness_centrality(G, k=centralityValue, weight='weight')
         # Find the edge which has the max centrality and then remove it
         sortedCentrality = sorted(centrality.items(), key=operator.itemgetter(1), reverse=True)
-        # Find all edges which may have same max centrality
+        # Find all edges which may have same max betweenness centrality
         temp = []
         for e,v in sortedCentrality:
             if v == sortedCentrality[0][1]:
                 temp.append(e)
             else:
                 break
-        # Pick a random edge from edges with max modularity
-        maxC = random.choice(temp)
-        # Remove the edge
-        G.remove_edge(maxC[0],maxC[1])
+        # Remove all edges with same max betweenness centrality
+        for e in temp:
+            G.remove_edge(e[0],e[1])
 
         # Get connected components after the removal
         newComponents = list(nx.connected_components(G))
