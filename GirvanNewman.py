@@ -108,10 +108,10 @@ def GirvanNewman(G):
     m = 0
     try:
         for n1,n2,data in G.edges(data=True):
-            m += float(data['weight'])
+            m += 2*float(data['weight'])
     except:
         for n1,n2,data in G.edges(data=True):
-            m += 1
+            m += 2
 
     Qbest, Qcurrent = 0.0, 0.0
     # Run until all edges have been removed from graph
