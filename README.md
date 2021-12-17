@@ -7,7 +7,7 @@ In this project we have implemented and evaluate three community detection algor
 * Label Propagation Algorithm
 * Girvan-Newman Algorithm
 
-Students:
+Authors:
 * Andreas Panayiotou
 * Theodoros Kyriakou
 
